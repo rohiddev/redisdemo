@@ -15,8 +15,9 @@ public class App {
 	@Bean
 	public JedisConnectionFactory connectionFactory() {
 	  JedisConnectionFactory connectionFactory = new JedisConnectionFactory();
-	  connectionFactory.setHostName("localhost");
+	  connectionFactory.setHostName("redis");
 	  connectionFactory.setPort(6379);
+	  connectionFactory.setPassword("password");
 	 
 	  return connectionFactory;
 	}
