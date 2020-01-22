@@ -17,7 +17,7 @@ public class App {
 	  JedisConnectionFactory connectionFactory = new JedisConnectionFactory();
 	  connectionFactory.setHostName("redis.alhdro.ng.0001.usw1.cache.amazonaws.com");
 	  connectionFactory.setPort(6379);
-	  connectionFactory.setPassword("password");
+	  //connectionFactory.setPassword("password");
 	 
 	  return connectionFactory;
 	}
